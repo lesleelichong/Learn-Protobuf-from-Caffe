@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package Mynamespace;
+
+message Blob {
+  repeated int64 dim = 1 [packed = true];
+  optional int64 num = 2 [default = 0];
+}
+message BlobProto {
+// 4D dimensions -- deprecated.  Use "shape" instead.
+  optional int32 num = 1 [default = 0];
+  optional int32 channels = 2 [default = 0];
+  optional int32 height = 3 [default = 0];
+  optional int32 width = 4 [default = 0];
+  repeated float data = 5 [packed = true];
+  repeated float diff = 6 [packed = true];
+  optional Blob blob = 7;
+}
