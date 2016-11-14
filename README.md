@@ -24,7 +24,7 @@ message BlobProto
 }
 ```
 ## 学习使用Protobuf类
-方法很简单，直接看生成的.h和.cc文件里类的代码，学习怎么使用，然后研读Caffe源代码，学习protobuf文件io操作。直接码代码，单步调试学习即可。
+方法很简单，直接看生成的.h和.cc文件里类的代码，学习怎么使用，然后研读Caffe源代码，学习protobuf文件io操作。直接码代码，单步调试学习即可。通过执行代码可以看到，Protobuf能将完整的message类整个输出到二进制文件，然后从二进制文件直接解析出来，确实很方便。
 ```
 #include <iostream>
 #include <fstream>
