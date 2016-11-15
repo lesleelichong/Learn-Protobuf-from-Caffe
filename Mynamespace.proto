@@ -15,4 +15,5 @@ message BlobProto {
   repeated float data = 5 [packed = true];
   repeated float diff = 6 [packed = true];
   optional Blob blob = 7;
+  repeated Blob blobs = 8;
 }

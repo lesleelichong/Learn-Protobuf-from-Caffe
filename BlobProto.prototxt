@@ -1,0 +1,22 @@
+num: 21
+channels: 22
+height: 117
+width: 123
+blob{
+num : 99
+dim: 777
+dim   : 888
+dim :999
+}
+blobs{
+num : 9
+dim: 77
+dim   : 88
+dim :99
+}
+blobs{
+num : 12
+dim: 7
+dim   : 8
+dim :9
+}
